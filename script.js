@@ -1,12 +1,12 @@
 const character = "#";
 const count = 8;
 const rows = [];
-padRow("Pader");
+
 function padRow(name) {
   const test = "Testing";
-  return character + name;
+  return test;
 }
-const call = padRow();
+const call = padRow("CamperChan");
 console.log(call);
 
 for (let i = 0; i < count; i = i + 1) {
@@ -20,7 +20,6 @@ for (const row of rows) {
 }
 
 console.log(result);
-
 const call = padRow();
 console.log(call);
 for (let i = 1; i < count; i = i + 1) {
