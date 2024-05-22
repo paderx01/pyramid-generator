@@ -9,10 +9,13 @@ function padRow(rowNumber, rowCount) {
     " ".repeat(rowCount - rowNumber)
   );
 }
+// TODO: use a different type of loop
+/*for (let i = 1; i <= count; i++) {
+  rows.push(padRow(i, count));
+} */
 
-for (let i = 0; i < count; i += 1) {
-  rows.push(padRow(i + 1, count));
-}
+let continueLoop = false;
+let done = 0;
 
 let result = "";
 
