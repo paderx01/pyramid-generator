@@ -9,18 +9,18 @@ function padRow(rowNumber, rowCount) {
     " ".repeat(rowCount - rowNumber)
   );
 }
+
 // TODO: use a different type of loop
 /*for (let i = 1; i <= count; i++) {
   rows.push(padRow(i, count));
-} */
+}*/
 
 let continueLoop = false;
 let done = 0;
-while (continueLoop) {
+
+while (done !== count) {
   done++;
-  if (done == count) {
-    console.log();
-  }
+  rows.push(padRow(done, count));
 }
 
 let result = "";
@@ -35,9 +35,3 @@ console.log(call);
 for (let i = 1; i < count; i = i + 1) {
   rows.push(character.repeat(i + 1));
 }
-
-let result = "";
-for (const row of rows) {
-  result = result + "\n" + row;
-}
-console.log(result);
